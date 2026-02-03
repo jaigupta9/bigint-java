@@ -1,3 +1,4 @@
+> Arbitrary-precision integer arithmetic implemented from scratch in Java.
 # BigInt Arithmetic Library (Java)
 
 A custom arbitrary-precision integer library implemented **from scratch in Java**, without using `java.math.BigInteger`.

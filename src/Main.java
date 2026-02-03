@@ -40,5 +40,7 @@ public class Main {
             case 10 -> System.out.println(BigInt.compare(a, b));
             default -> System.out.println("Invalid choice");
         }
+
+        sc.close();
     }
 }

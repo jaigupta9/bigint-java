@@ -261,6 +261,7 @@ public class BigInt {
 
         // 6. Apply sign to result
         ans.negative = resultNegative;
+        ans.rebuild();
         return ans;
     }
 
@@ -296,6 +297,11 @@ public class BigInt {
 
     // ---------- GCD ----------
     public static BigInt gcd(BigInt a, BigInt b) {
+        a = a.copy();
+        b = b.copy();
+        a.negative = false;
+        b.negative = false;
+
         if (b.size == 1 && b.head.digits == 0)
             return a;
         return gcd(b, mod(a, b));
